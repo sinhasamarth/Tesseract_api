@@ -1,10 +1,11 @@
 import pytesseract as pytesseract
 from PIL import Image
-from flask import Flask
+from fastapi import FastAPI
 
-app = Flask(__name__)
+# Samarth
 
-#Samarth
+app = FastAPI()
+
 
 @app.route("/")
 def hello():
@@ -44,7 +45,3 @@ def get_text():
         final = first * second
 
     return final
-
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=12345, debug=True)
