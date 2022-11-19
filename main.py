@@ -9,10 +9,8 @@ app = FastAPI()
 
 @app.route("/")
 def hello():
-    try:
-        return {"value": get_text()}
-    except BaseException as e:
-        return {'Failed to do something: ': str(e)}
+
+       return {"a":'a'}
 
 
 def get_text():
