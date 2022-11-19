@@ -13,7 +13,7 @@ def hello():
 
 
 def get_text():
-    pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+    pytesseract.pytesseract.tesseract_cmd = './.apt/usr/share/tesseract-ocr/4.00/tessdata'
     image = Image.open('./sam.png', mode='r')
     raw = str(pytesseract.image_to_string(image))
     raw.strip()
