@@ -9,8 +9,7 @@ app = FastAPI()
 
 @app.route("/")
 def hello():
-
-       return {"a":'a'}
+    return {"a": 'a'}
 
 
 def get_text():
